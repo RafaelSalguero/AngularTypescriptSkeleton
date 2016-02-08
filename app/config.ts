@@ -11,6 +11,5 @@ require.config(
             'angular-ui-router' : { exports: 'angular-ui-router', deps: [ 'angular' ] }
         },
         deps: ["main/main"]
-              
     }
 );
