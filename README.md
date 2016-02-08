@@ -11,7 +11,7 @@ Thus, the following design decisions have been made:
 
 - **Folder structrure** *Feature based* instead of *type based* in order to scale well for large applications.
 - **Tasks** `npm scripts` instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
-- **Routing** uncluded routing using  `ui.routing`
+- **Routing** included routing using  `ui.routing`
 
  
 **Recomended setup**
