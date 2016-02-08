@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "tsc && http-server",
+    "serve": "tsc && http-server -c-1",
     "watch": "tsc -w"
   },
   "author": "Rafael Salguero Iturrios",
@@ -13,6 +13,7 @@
   "dependencies": {
     "angular": "^1.5.0",
     "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.0",
     "requirejs": "^2.1.22"
   }
 }
