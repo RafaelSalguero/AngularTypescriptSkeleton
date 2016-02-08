@@ -9,5 +9,5 @@ require.config({
         'angular': { exports: 'angular' },
         'angular-ui-router': { exports: 'angular-ui-router', deps: ['angular'] }
     },
-    deps: ["main"]
+    deps: ["main/main"]
 });
