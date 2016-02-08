@@ -1,0 +1,17 @@
+{
+  "name": "ats",
+  "version": "1.0.0",
+  "description": "angular typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "tsc && http-server",
+    "watch": "tsc -w"
+  },
+  "author": "Rafael Salguero Iturrios",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}
