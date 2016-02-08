@@ -1,3 +1,6 @@
+##DO NOT USE ME YET
+This proyect is isn't finished or ready
+
 ##Angular + Typescript + RequireJS skeleton ❤❤
 ###Easily starting up angular projects.
 
