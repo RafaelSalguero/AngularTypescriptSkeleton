@@ -20,7 +20,7 @@ export = function(app : ng.IModule) { app.config(function($stateProvider : ng.ui
         })
         .state('state2', {
             url:"/state2",
-            templateUrl: base("home");
+            templateUrl: base("home")
         });
 });    
 }
