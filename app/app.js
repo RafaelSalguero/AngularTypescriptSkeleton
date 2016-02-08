@@ -18,4 +18,3 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 app.run(function () {
     alert('hola a todos desde TS 2');
 });
-//# sourceMappingURL=app.js.map

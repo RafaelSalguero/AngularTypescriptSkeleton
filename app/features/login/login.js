@@ -6,4 +6,3 @@ var LoginController = (function () {
     return LoginController;
 })();
 angular.module('app').controller('LoginController', LoginController);
-//# sourceMappingURL=login.js.map

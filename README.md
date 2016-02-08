@@ -2,7 +2,7 @@
 This proyect is isn't finished or ready
 
 ##Angular + Typescript + RequireJS skeleton ❤❤
-###Easily starting up angular projects.
+###Easily starting up large-scale angular projects.
 
 This project is built from the ground up to be 
 **as minimal as posible**, while still be applicable to **large scale applications**

@@ -1,16 +1,13 @@
 <!doctype html>
-<html ng-app="app">
+<html>
     <head>
         <meta charset="utf-8" >
         <script src="node_modules/angular/angular.js"></script>
         <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 
-        <script src="app/app.js"></script>
-        <script src="app/login/login.js"></script>
-        
     </head>
     
-    <body>
+    <body id="container">
         <p>Nothing here {{'yet' + '!'}}</p>
     
         <div ui-view></div>
@@ -19,3 +16,6 @@
         <a ui-sref="state2">State 2</a>
     </body>
 </html>
+
+<!-- main.js should run after all the html have been loaded because this file search for the first body element -->
+<script data-main="app/config" src="node_modules/requirejs/require.js"></script>
