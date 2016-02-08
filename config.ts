@@ -5,11 +5,11 @@ require.config(
         baseUrl: "/app",
         paths: {
             'angular' : "/node_modules/angular/angular",
-            'ui-router' : "/node_modules/angular-ui-router/release/angular-ui-router",
+            'angular-ui-router' : "/node_modules/angular-ui-router/release/angular-ui-router",
         },
         shim: {
             'angular' : { exports: 'angular' },
-            'ui-router' : { exports: 'angular', deps: [ 'angular' ] }
+            'angular-ui-router' : { exports: 'angular-ui-router', deps: [ 'angular' ] }
         },
         deps: ["main"]
               

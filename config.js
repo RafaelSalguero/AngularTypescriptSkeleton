@@ -8,7 +8,7 @@ require.config({
     },
     shim: {
         'angular': { exports: 'angular' },
-        'angular-ui-router': { exports: 'angular', deps: ['angular'] }
+        'angular-ui-router': { exports: 'angular-ui-router', deps: ['angular'] }
     },
     deps: ["main"]
 });
