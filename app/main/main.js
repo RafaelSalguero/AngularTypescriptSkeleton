@@ -1,10 +1,7 @@
-define(["require", "exports", 'main/router', 'angular'], function (require, exports, router) {
+define(["require", "exports", 'main/app', 'main/router', 'main/autoreq'], function (require, exports, app, router) {
     console.log("main run");
-    var appName = "app";
-    var depends = ['ui.router'];
     var container = "container";
-    var app = angular.module(appName, depends);
-    router(app);
-    angular.bootstrap(document.getElementById(container), [appName]);
+    router(app.app);
+    angular.bootstrap(document.getElementById(container), [app.app.name]);
     return app;
 });

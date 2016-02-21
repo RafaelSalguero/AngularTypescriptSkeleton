@@ -1,8 +1,9 @@
-//import messages = require("./utils/messages");
+import app = require('main/app');
 
 class LoginController
 {
     Message = "Hi there";
 }
 
-angular.module('app').controller('LoginController', LoginController);
+console.log("login run");
+app.app.controller('LoginController', LoginController);

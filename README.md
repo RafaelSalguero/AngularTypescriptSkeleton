@@ -10,7 +10,7 @@ This project is built from the ground up to be
 Thus, the following design decisions have been made:  
 
 - **Folder structrure** *Feature based* instead of *type based* in order to scale well for large applications.
-- **Tasks** `npm scripts` instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
+- **Tasks** `npm scripts` and `node` programs instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
 - **Routing** included using  `ui.routing`
 
  
