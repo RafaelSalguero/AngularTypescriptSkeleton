@@ -1,9 +1,8 @@
 
+import 'main/requireme';
 //add more main dependencies here:
-import 'main/autoreq';
 
 import app = require('main/app');
-
 
 console.log("main run");
 

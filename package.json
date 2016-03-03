@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "tsc && http-server -c-1",
-    "watch": "tsc -w"
+    "serve": "node tools\\build.js && http-server -c-1",
+    "watch": "node tools\\build.js && tsc -w"
   },
   "author": "Rafael Salguero Iturrios",
   "license": "ISC",
@@ -17,6 +17,6 @@
     "requirejs": "^2.1.22"
   },
   "devDependencies": {
-    "autoreq": "^1.0.5"
+    "autoreq": "^1.0.6"
   }
 }
