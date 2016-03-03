@@ -11,8 +11,6 @@ var depends = [ 'ui.router' ];
 var container = "container";
 var app = angular.module(appName, depends);
 
-
-
 export = { 
     /**Application main module */
     app : app,

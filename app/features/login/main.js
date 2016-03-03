@@ -1,11 +1,18 @@
 define(["require", "exports", 'main/app'], function (require, exports, app) {
+    //Declare the login controller
     var LoginController = (function () {
         function LoginController() {
-            this.Message = "Hi there";
         }
+        LoginController.prototype.Enter = function () {
+            if (this.User == "Rafa" && this.Password == "123") {
+                alert("Login succeed!");
+            }
+            else {
+                alert("psst! User is 'Rafa' and password is '123");
+            }
+        };
         return LoginController;
     })();
-    console.log("login run");
     //Register the controller
     app.app.controller('LoginController', LoginController);
     //Define its own routing state:

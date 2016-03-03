@@ -7,30 +7,24 @@ This proyect is isn't finished or ready
 This project is built from the ground up to be 
 **as minimal as posible**, while still be applicable to **large scale applications**
 
-Thus, the following design decisions have been made:  
-
-- **Folder structrure** *Feature based* instead of *type based* in order to scale well for large applications.
+- **Folder structrure** *Feature based* instead of *type based* in order to avoid a single folder containing many unrelated files
+- **Auto generated `require` dependencies** All files named `main.js` are automaticly required, preventing a large, manually mantained dependencies file for controllers, services, ...
 - **Tasks** `npm scripts` and `node` programs instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
-- **Routing** included using  `ui.routing`
-
- 
-**Recomended setup**
-- Windows
-- Visual studio code
+- **Routing** included using `ui.routing` that supports neasted views and other goodies
 
 
 **External dependencies**
 
 - **NPM** - Node package manager
 - **Typescript** Install it using `npm install typescript -g`
-- **Typings** Type script definitions manager. Install it using `npm install typings -g`
 - **http-server** Used for serving the page. Install it using `npm install http-server -g`
+- **Typings** Type script definitions manager. Install it using `npm install typings -g`
+
 
 ###Running the app:
 
 - Transpile Typescript running the `task watch` on VSCode task or `npm run watch` on the console
-- Serve the page running the `task serve` on VSCode task or `npm run serve` on the console 
-    - **Note: ** run `npm run serve` on a diferent console window to not interrupt the `watch` task
+- Serve the page running the `npm run serve` on the console 
 - Enter to `localhost:8080` on your browser 
 
 ##Structure overview:

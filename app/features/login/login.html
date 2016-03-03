@@ -1,2 +1,14 @@
-<h1>State 1</h1>
-<b>Message of greeting: {{Main.Message}}</b>
+
+<link rel="stylesheet" href="app/features/login/style.css" >
+
+<div class="container">
+    
+    <div class="form-signin">
+        <h2 class="form-signin-heading">Sign in <b>{{Main.User}}</b></h2>
+        
+        <input class="form-control" placeholder="User name" ng-model="Main.User" />
+        <input type="password" class="form-control" placeholder="Password" ng-model="Main.Password" />
+        
+        <button class="btn btn-lg btn-primary btn-block" ng-click="Main.Enter()">Sign in</button>
+    </div>
+</div>

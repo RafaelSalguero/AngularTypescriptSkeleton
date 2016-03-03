@@ -1,11 +1,23 @@
 import app = require('main/app');
 
+//Declare the login controller
 class LoginController
 {
-    Message = "Hi there";
+    User: string;
+    Password: string;
+    
+    Enter(): void
+    {
+        if (this.User=="Rafa" && this.Password=="123")
+        {
+            alert("Login succeed!");
+        }
+        else 
+        {
+            alert("psst! User is 'Rafa' and password is '123");  
+        }
+    }
 }
-
-console.log("login run");
 
 //Register the controller
 app.app.controller('LoginController', LoginController);
