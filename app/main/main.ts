@@ -4,6 +4,12 @@ import 'main/requireme';
 
 import app = require('main/app');
 
+//configure the default routing state:
+app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
+        $urlRouterProvider.otherwise("/login");
+});
+
+
 console.log("main run");
 
 var container = "container"; 

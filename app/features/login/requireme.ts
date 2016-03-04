@@ -19,11 +19,11 @@ class LoginController {
 }
 
 //Register the controller
-app.app.controller('LoginController', LoginController);
+app.controller(LoginController);
 
 //Define its own routing state:
-app.state("state1", {
-    url: "/state1",
+app.state("login", {
+    url: "/login",
     templateUrl: "app/features/login/login.html",
     controller: "LoginController",
     controllerAs: "Main"

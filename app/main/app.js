@@ -15,9 +15,16 @@ define(["require", "exports", 'angular', 'angular-ui-router'], function (require
          */
         function (name, config) {
             app.config(function ($stateProvider, $urlRouterProvider) {
-                $urlRouterProvider.otherwise("/state1");
                 $stateProvider.state(name, config);
             });
+        },
+        /**Declare a controller with the same name as the class*/
+        controller: function (constructor) {
+            app.controller(constructor.name, constructor);
+        },
+        /**Declare a service with the same name as the class*/
+        service: function (constructor) {
+            app.service(constructor.name, constructor);
         }
     };
 });
