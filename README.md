@@ -30,7 +30,7 @@ This project is built from the ground up to be
 
 ###Other tasks
 - **Set typescript to watch files** using `npm run watch` *Note: You will need to run the **build** task in order to regenerate `requireme.ts` files*
-- **Regenerate `requireme.ts` files** This files are generated when running the watch or the serve tasks but only once (no file watchers here)
+- **Regenerate `requireme.ts` files** This files are generated when running the watch or the serve tasks but only once (no file watchers here), you can run it manually using `node tools/build.js` 
 
 ##Structure overview:
 - The folder structure is designed to be **minimal** and to have many **small 

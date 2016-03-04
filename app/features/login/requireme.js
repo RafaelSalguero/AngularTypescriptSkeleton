@@ -1,11 +1,12 @@
 define(["require", "exports", 'main/app'], function (require, exports, app) {
     //Declare the login controller
     var LoginController = (function () {
-        function LoginController() {
+        function LoginController($state) {
+            this.$state = $state;
         }
         LoginController.prototype.Enter = function () {
-            if (this.User == "Rafa" && this.Password == "123") {
-                alert("Login succeed!");
+            if (this.User == "rafa" && this.Password == "123") {
+                this.$state.go("state2");
             }
             else {
                 alert("psst! User is 'Rafa' and password is '123");
