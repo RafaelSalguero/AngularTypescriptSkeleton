@@ -4,6 +4,8 @@ This proyect is isn't finished, but it have the most work already done. Feel fre
 ##Angular + Typescript + RequireJS skeleton ❤❤
 ###Easily starting up large-scale angular projects.
 
+
+
 This project is built from the ground up to be 
 **as minimal as posible**, while still be applicable to **large scale applications**
 
@@ -21,11 +23,14 @@ This project is built from the ground up to be
 - **Typings** Type script definitions manager. Install it using `npm install typings -g`
 
 
-###Running the app:
+##Running the app:
 - Restore packages with `npm i`
-- Transpile Typescript running the `task watch` on VSCode task or `npm run watch` on the console
 - Serve the page running the `npm run serve` on the console 
 - Enter to `localhost:8080` on your browser 
+
+###Other tasks
+- **Set typescript to watch files** using `npm run watch` *Note: You will need to run the **build** task in order to regenerate `requireme.ts` files*
+- **Regenerate `requireme.ts` files** This files are generated when running the watch or the serve tasks but only once (no file watchers here)
 
 ##Structure overview:
 - The folder structure is designed to be **minimal** and to have many **small 
