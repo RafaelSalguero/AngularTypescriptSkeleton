@@ -56,7 +56,7 @@ if (args.length < 3) {
     console.log("- input[N] : Path of input folders to scan");
     console.log();
     console.log("Example:");
-    console.log('node autoreq.js "." "main.js" "." "test\\result\\autoreq.js" "."');
+    console.log('node autoreq.js "." "main.js" "." "test/result/autoreq.js" "."');
 }
 else {
     var fileName = args[0];
@@ -75,8 +75,13 @@ else {
         "\n//output     : " + output +
         "\n//inputs     : " + inputs + "\n";
     var removeExt = function (x) { return x.substr(0, x.length - path.extname(x).length); };
+    var replaceSlash = function (x) { return x.split("\\").join("/"); };
+    //Sanitize file paths:
+    //- Set path relative to base directory
+    //- Remove file extension
+    //- Replace \ path separator for /
     var names = files
-        .map(function (x) { return removeExt(path.relative(base, x)); });
+        .map(function (x) { return replaceSlash(removeExt(path.relative(base, x))); });
     //filter out files that its name and path are equal to the output file:    
     var outputPath = removeExt(path.resolve(output));
     names.forEach(function (x) {

@@ -5,5 +5,5 @@
 //basePath   : app
 //output     : app\polyfills\requireme.ts
 //inputs     : app\polyfills
-import 'polyfills\functionName';
-//Ignored polyfills\requireme because its file name matches with the output file
+import 'polyfills/functionName';
+//Ignored polyfills/requireme because its file name matches with the output file

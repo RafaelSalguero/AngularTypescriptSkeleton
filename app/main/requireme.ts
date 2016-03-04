@@ -5,6 +5,6 @@
 //basePath   : app
 //output     : app\main\requireme.ts
 //inputs     : app
-import 'features\login\requireme';
-//Ignored main\requireme because its file name matches with the output file
-import 'polyfills\requireme';
+import 'features/login/requireme';
+//Ignored main/requireme because its file name matches with the output file
+import 'polyfills/requireme';
