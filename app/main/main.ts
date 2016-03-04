@@ -9,9 +9,6 @@ app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider
         $urlRouterProvider.otherwise("/login");
 });
 
-
-console.log("main run");
-
 var container = "container"; 
 angular.bootstrap( document.getElementById(container), [ app.app.name ]);
 

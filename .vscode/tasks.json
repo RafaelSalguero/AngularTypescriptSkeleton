@@ -31,6 +31,10 @@
         {
             "taskName": "serve",
             "showOutput": "always"
+        },
+        {
+            "taskName": "build",
+            "showOutput": "always"
         }
     ]
 }

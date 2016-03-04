@@ -10,6 +10,5 @@ exec([
     'node node_modules\\autoreq\\autoreq.js *.js app app\\polyfills\\requireme.ts app\\polyfills',
     //generate requires for all requireme files:
     'node node_modules\\autoreq\\autoreq.js requireme.ts app app\\main\\requireme.ts app',
-    'tsc',
     'echo build ok'
     ]);

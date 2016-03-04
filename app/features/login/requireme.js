@@ -1,16 +1,20 @@
-define(["require", "exports", 'main/app'], function (require, exports, app) {
+define(["require", "exports", 'main/app', 'features/login/loginService'], function (require, exports, app, LoginService) {
+    LoginService;
     //Declare the login controller
     var LoginController = (function () {
-        function LoginController($state) {
+        function LoginController($state, LoginService) {
             this.$state = $state;
+            this.LoginService = LoginService;
         }
         LoginController.prototype.Enter = function () {
-            if (this.User == "rafa" && this.Password == "123") {
-                this.$state.go("state2");
-            }
-            else {
-                alert("psst! User is 'Rafa' and password is '123");
-            }
+            var _this = this;
+            this.Loading = true;
+            this.LoginService.checkPassword(this.User, this.Password).then(function (x) {
+                if (x)
+                    _this.$state.go("state2");
+                else
+                    alert("psst! User is 'Rafa' and password is '123");
+            });
         };
         return LoginController;
     })();

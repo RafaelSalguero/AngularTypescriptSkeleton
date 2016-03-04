@@ -25,12 +25,22 @@ export = {
             $stateProvider.state(name, config);
         })
     },
-    /**Declare a controller with the same name as the class*/
-    controller : function(constructor : Function) : void  {
+    /**Declare a controller with the same name as the class
+    */
+    controller :
+    /**
+     * @param constructor The constructor of the controller to declare 
+     */ 
+    function(constructor : Function) : void  {
         app.controller((<any>constructor).name, constructor);
     },
-    /**Declare a service with the same name as the class*/
-    service : function<T>(constructor : Function) : void  {
+    /**Declare a service with the same name as the class
+    */
+    service :
+    /**
+     * @param constructor The constructor of the service to declare 
+     */
+     function<T>(constructor : Function) : void  {
         app.service((<any>constructor).name, constructor);
     }
 }; 

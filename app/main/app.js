@@ -18,12 +18,22 @@ define(["require", "exports", 'angular', 'angular-ui-router'], function (require
                 $stateProvider.state(name, config);
             });
         },
-        /**Declare a controller with the same name as the class*/
-        controller: function (constructor) {
+        /**Declare a controller with the same name as the class
+        */
+        controller: 
+        /**
+         * @param constructor The constructor of the controller to declare
+         */
+        function (constructor) {
             app.controller(constructor.name, constructor);
         },
-        /**Declare a service with the same name as the class*/
-        service: function (constructor) {
+        /**Declare a service with the same name as the class
+        */
+        service: 
+        /**
+         * @param constructor The constructor of the service to declare
+         */
+        function (constructor) {
             app.service(constructor.name, constructor);
         }
     };

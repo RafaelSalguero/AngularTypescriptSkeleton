@@ -1,5 +1,4 @@
 //Configure requireJS here
-console.log("config run");
 require.config({
     paths: {
         'angular': "/node_modules/angular/angular",

@@ -1,5 +1,4 @@
 //Configure requireJS here
-console.log("config run");
 require.config(
     {
         paths: {

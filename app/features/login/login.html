@@ -7,11 +7,16 @@
         <p/>
         Psst! User is <b>rafa</b> and password is <b>123</b>
     </div>
-    <div class="col-md-4">
-        <h2 class="form-signin-heading">Sign in <b>{{Main.User}}</b></h2>
+    <div class="col-md-4" ng-show="!Main.Loading"  >
+        <h2  class="form-signin-heading">Sign in <b>{{Main.User}}</b></h2>
+      
+        
         <input class="form-control" placeholder="User name" ng-model="Main.User" />
         <input type="password" class="form-control" placeholder="Password" ng-model="Main.Password" />
         
         <button class="btn btn-lg btn-primary btn-block" ng-click="Main.Enter()">Sign in</button>
+    </div>
+    <div class="col-md-4" ng-show="Main.Loading">
+        <h1><i class="fa fa-circle-o-notch fa-spin"></i></h1>
     </div>
 </div>

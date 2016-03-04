@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node tools\\build.js && http-server -c-1",
-    "watch": "node tools\\build.js && tsc -w"
+    "serve": "node tools\\build.js && tsc && http-server -c-1",
+    "watch": "node tools\\build.js && tsc -w",
+    "build": "node tools\\build.js && tsc"
   },
   "author": "Rafael Salguero Iturrios",
   "license": "ISC",
