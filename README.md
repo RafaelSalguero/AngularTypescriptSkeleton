@@ -5,8 +5,6 @@ This proyect is isn't finished, but it have the most work already done. Feel fre
 *with Karma + PhantomJS unit testing!*
 ###Easily starting up large-scale angular projects.
 
-
-
 This project is built from the ground up to be 
 **as minimal as posible**, while still be applicable to **large scale applications**
 
@@ -30,6 +28,7 @@ This project is built from the ground up to be
 - Enter to `localhost:8080` on your browser 
 
 ##Unit testing:
+ - On a separate terminal window, run `npm run karmaServer` to start the karma phantomJS server
  - Run `npm test` for running all Karma tests
  - Write your own tests in typescript by adding `*.spec.ts` files to `test/unit` folder
 
@@ -69,6 +68,6 @@ index.html
 - **`config.ts` file**
     - Contains `shim` dependencies in order to load libraries that doesn't implement AMD/requirejs such as AngularJS
     - Depends on `main/main` so that when this file is loaded, `main.ts` is executed 
-###Install a new typing
-- Search the typing on name on DefinitelyTyped
-- Enter `typings install library_name -SA`
+###Install a new DefinitelyTyped definition
+- Search the typing on name on DefinitelyTyped or by using `typing search library_name -A`
+- Run `typings install library_name -SA` to install the package as an ambient dependency
