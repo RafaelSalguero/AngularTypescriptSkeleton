@@ -24,7 +24,8 @@ This project is built from the ground up to be
 
 
 ##Running the app:
-- Restore packages with `npm i`
+- Restore packages with `npm i --global-style`
+- Restore typings with `typings i`
 - Serve the page running the `npm run serve` on the console 
 - Enter to `localhost:8080` on your browser 
 
