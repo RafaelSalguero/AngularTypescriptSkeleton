@@ -1,4 +1,3 @@
-
 import 'main/requireme';
 //add more main dependencies here:
 
@@ -9,6 +8,7 @@ app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider
         $urlRouterProvider.otherwise("/login");
 });
 
+//Manually boostrap angular
 var container = "container"; 
 angular.bootstrap( document.getElementById(container), [ app.app.name ]);
 

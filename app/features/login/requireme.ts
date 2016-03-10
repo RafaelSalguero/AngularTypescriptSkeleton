@@ -34,4 +34,4 @@ app.state("login", {
     templateUrl: "app/features/login/login.html",
     controller: "LoginController",
     controllerAs: "Main"
-})
+});

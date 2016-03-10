@@ -66,4 +66,4 @@ index.html
     - Depends on `main/main` so that when this file is loaded, `main.ts` is executed 
 ###Install a new typing
 - Search the typing on name on DefinitelyTyped
-- Enter `typings install library_name --ambient`
+- Enter `typings install library_name -SA`
