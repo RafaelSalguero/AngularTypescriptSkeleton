@@ -2,6 +2,7 @@
 This proyect is isn't finished, but it have the most work already done. Feel free to test it or contribute! :)
 
 ##Angular + Typescript + RequireJS skeleton ❤❤
+*with Karma + PhantomJS unit testing!*
 ###Easily starting up large-scale angular projects.
 
 
@@ -22,12 +23,15 @@ This project is built from the ground up to be
 - **http-server** Used for serving the page. Install it using `npm install http-server -g`
 - **Typings** Type script definitions manager. Install it using `npm install typings -g`
 
-
 ##Running the app:
 - Restore packages with `npm i --global-style`
 - Restore typings with `typings i`
 - Serve the page running the `npm run serve` on the console 
 - Enter to `localhost:8080` on your browser 
+
+##Unit testing:
+ - Run `npm test` for running all Karma tests
+ - Write your own tests in typescript by adding `*.spec.ts` files to `test/unit` folder
 
 ###Other tasks
 - **Set typescript to watch files** using `npm run watch` *Note: You will need to run the **build** task in order to regenerate `requireme.ts` files*
