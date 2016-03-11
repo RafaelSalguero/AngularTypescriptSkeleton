@@ -6,7 +6,7 @@ module.exports = function(config) {
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     //this should be the project root folder in order to be able to directionate to app and node_modules
-    basePath: '../../../',
+    basePath: '../../',
 
 
     // frameworks to use
@@ -16,14 +16,18 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      //all files in all subdirectories inside app
+      //all files in all subdirectories inside the project
       {pattern: 'app/**/*.js', included: false},
       
+      {pattern: 'node_modules/angular/**/*.js', included: false},
+      {pattern: 'node_modules/angular-ui-router/**/*.js', included: false},
+      {pattern: 'node_modules/angular-mocks/**/*.js', included: false},
+   
       //all .spec.js files inside test/unit folder
-      {pattern: 'app/test/unit/test.spec.js', included: false},
+      {pattern: 'test/unit/test.spec.js', included: false},
       
       //load this script first:
-      'app/test/unit/test-main.js'
+      'test/unit/test-main.js'
     ],
 
 

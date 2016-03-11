@@ -14,12 +14,12 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 require.config({
     // Karma serves files under /base, which is the basePath from your config file
-    baseUrl: '/base/app',
+    baseUrl: '/base',
 
     paths: {
-        'angular': "/node_modules/angular/angular",
-        'angular-ui-router': "/node_modules/angular-ui-router/release/angular-ui-router",
-        'angular-mocks': "/node_modules/angular-mocks/angular-mocks",
+        'angular': "node_modules/angular/angular",
+        'angular-ui-router': "node_modules/angular-ui-router/release/angular-ui-router",
+        'angular-mocks': "node_modules/angular-mocks/angular-mocks",
         
     },
     shim: {
