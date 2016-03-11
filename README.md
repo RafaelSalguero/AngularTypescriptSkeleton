@@ -14,17 +14,18 @@ This project is built from the ground up to be
 - **Routing** included using `ui.routing` that supports neasted views and other goodies
 
 
-**External dependencies**
+**External global dependencies**
 
-- **NPM** - Node package manager
+- **NPM** - Node package manager. Install it from [here](https://nodejs.org)
 - **Typescript** Install it using `npm install typescript -g`
 - **http-server** Used for serving the page. Install it using `npm install http-server -g`
 - **Typings** Type script definitions manager. Install it using `npm install typings -g`
 
-##Running the app:
+##Restore packages first!!!
 - Restore packages with `npm i --global-style`
-- Restore typings with `typings i`
-- Serve the page running the `npm run serve` on the console 
+
+##Running the app:
+- Serve the page running `npm start` 
 - Enter to `localhost:8080` on your browser 
 
 ##Unit testing:
@@ -34,6 +35,10 @@ This project is built from the ground up to be
 ###Other tasks
 - **Set typescript to watch files** using `npm run watch` *Note: You will need to run the **build** task in order to regenerate `requireme.ts` files*
 - **Regenerate `requireme.ts` files** This files are generated when running the watch or the serve tasks but only once (no file watchers here), you can run it manually using `node tools/build.js` 
+
+###Install a new DefinitelyTyped definition
+- Search the typing on name on DefinitelyTyped or by using `typing search library_name -A`
+- Run `typings install library_name -SA` to install the package as an ambient dependency
 
 ##Structure overview:
 - The folder structure is designed to be **minimal** and to have many **small 
@@ -67,6 +72,3 @@ index.html
 - **`config.ts` file**
     - Contains `shim` dependencies in order to load libraries that doesn't implement AMD/requirejs such as AngularJS
     - Depends on `main/main` so that when this file is loaded, `main.ts` is executed 
-###Install a new DefinitelyTyped definition
-- Search the typing on name on DefinitelyTyped or by using `typing search library_name -A`
-- Run `typings install library_name -SA` to install the package as an ambient dependency

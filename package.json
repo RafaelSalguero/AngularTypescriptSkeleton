@@ -4,11 +4,12 @@
   "description": "angular typescript",
   "main": "index.js",
   "scripts": {
-    "serve": "node tools\\build.js && tsc && http-server -c-1",
+    "install" : "typings i",
+    "start": "node tools\\build.js && tsc && http-server -c-1",
     "watch": "node tools\\build.js && tsc -w",
     "build": "node tools\\build.js && tsc",
     "karma": "node node_modules/karma/bin/karma",
-    "test": "node node_modules/karma/bin/karma start \"test/unit/karma.conf.js\" --single-run"
+    "test": "npm run build && node node_modules/karma/bin/karma start \"test/unit/karma.conf.js\" --single-run"
   },
   "author": "Rafael Salguero Iturrios",
   "license": "ISC",
