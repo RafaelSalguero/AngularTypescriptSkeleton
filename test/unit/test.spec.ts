@@ -1,9 +1,8 @@
-import loginService =require("unit/hola");
+import loginService =require("app/features/login/loginService");
  
 describe("a suite", function() {
-   it("should be 10",  ()=> 
-   {
-      expect(loginService).toBe(10); 
+   it("should be true",  function(){
+        expect( loginService).toBe(10 );
    });
 });
 

@@ -1,4 +1,4 @@
-define(["require", "exports", 'main/app'], function (require, exports, app) {
+define(["require", "exports", 'app/main/app'], function (require, exports, app) {
     var LoginService = (function () {
         function LoginService($q) {
             this.$q = $q;

@@ -1,7 +1,7 @@
-import 'main/requireme';
+import './requireme';
 //add more main dependencies here:
 
-import app = require('main/app');
+import app = require('./app');
 
 //configure the default routing state:
 app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {

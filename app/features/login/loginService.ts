@@ -1,4 +1,4 @@
-import app = require('main/app');
+import app = require('app/main/app');
 
 class LoginService {
     constructor(private $q : ng.IQService) {

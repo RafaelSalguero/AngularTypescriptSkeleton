@@ -1,6 +1,6 @@
-define(["require", "exports", "unit/hola"], function (require, exports, loginService) {
+define(["require", "exports", "app/features/login/loginService"], function (require, exports, loginService) {
     describe("a suite", function () {
-        it("should be 10", function () {
+        it("should be true", function () {
             expect(loginService).toBe(10);
         });
     });

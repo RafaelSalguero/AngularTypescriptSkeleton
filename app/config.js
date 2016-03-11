@@ -1,5 +1,6 @@
 //Configure requireJS here
 require.config({
+    baseUrl: '../',
     paths: {
         'angular': "/node_modules/angular/angular",
         'angular-ui-router': "/node_modules/angular-ui-router/release/angular-ui-router",
@@ -11,5 +12,5 @@ require.config({
         'angular-ui-router': { exports: 'angular-ui-router', deps: ['angular'] },
         'bootstrap': { deps: ['jQuery'] }
     },
-    deps: ["main/main"]
+    deps: ["app/main/main"]
 });

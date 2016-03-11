@@ -2,8 +2,8 @@
 //cd         : c:\Users\rafael\Documents\Web\app
 //___________
 //fileName   : *.js
-//basePath   : app
+//basePath   : .
 //output     : app\polyfills\requireme.ts
 //inputs     : app\polyfills
-import 'polyfills/functionName';
-//Ignored polyfills/requireme because its file name matches with the output file
+import 'app/polyfills/functionName';
+//Ignored app/polyfills/requireme because its file name matches with the output file

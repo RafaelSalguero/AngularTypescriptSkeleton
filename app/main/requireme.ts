@@ -2,10 +2,10 @@
 //cd         : c:\Users\rafael\Documents\Web\app
 //___________
 //fileName   : requireme.ts
-//basePath   : app
+//basePath   : .
 //output     : app\main\requireme.ts
 //inputs     : app
-import 'features/home/requireme';
-import 'features/login/requireme';
-//Ignored main/requireme because its file name matches with the output file
-import 'polyfills/requireme';
+import 'app/features/home/requireme';
+import 'app/features/login/requireme';
+//Ignored app/main/requireme because its file name matches with the output file
+import 'app/polyfills/requireme';

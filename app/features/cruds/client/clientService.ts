@@ -1,5 +1,5 @@
-import app = require('main/app');
-import Mock = require('features/cruds/MockCrudService');
+import app = require('app/main/app');
+import Mock = require('../MockCrudService');
 
 class ClientService extends Mock<models.Client>  {
     constructor($q : ng.IQService){

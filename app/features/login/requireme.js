@@ -1,4 +1,4 @@
-define(["require", "exports", 'main/app', './loginService'], function (require, exports, app, LoginService) {
+define(["require", "exports", 'app/main/app', './loginService'], function (require, exports, app, LoginService) {
     LoginService;
     //Declare the login controller
     var LoginController = (function () {

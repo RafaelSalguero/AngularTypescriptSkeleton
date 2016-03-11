@@ -1,4 +1,4 @@
-import app = require('main/app');
+import app = require('app/main/app');
 
 //We need to force the typescript compiler importing this module with the use of a dummy variable
 import LoginService = require('./loginService'); 

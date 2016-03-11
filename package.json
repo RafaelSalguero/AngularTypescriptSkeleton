@@ -8,8 +8,8 @@
     "watch": "node tools\\build.js && tsc -w",
     "build": "node tools\\build.js && tsc",
     "karma": "node node_modules/karma/bin/karma",
-    "karmaServer": "node node_modules/karma/bin/karma start test/unit/karma.conf.js",
-    "test": "node node_modules/karma/bin/karma run test/unit/karma.conf.js"
+    "karmaServer": "node node_modules/karma/bin/karma start app/test/unit/karma.conf.js",
+    "test": "node node_modules/karma/bin/karma run app/test/unit/karma.conf.js"
   },
   "author": "Rafael Salguero Iturrios",
   "license": "ISC",

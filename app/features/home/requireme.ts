@@ -1,4 +1,4 @@
-import app = require('main/app');
+import app = require('app/main/app');
 
 //Define its own routing state:
 app.state("state2", 
