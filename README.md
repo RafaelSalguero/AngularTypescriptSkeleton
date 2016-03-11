@@ -40,6 +40,10 @@ This project is built from the ground up to be
 - Search the typing on name on DefinitelyTyped or by using `typing search library_name -A`
 - Run `typings install library_name -SA` to install the package as an ambient dependency
 
+##Use this repo as a skeleton
+- Clone the repository `git clone https://github.com/RafaelSalguero/AngularTypescriptSkeleton.git`
+- Remove the remote origin `git remote rm origin`
+
 ##Structure overview:
 - The folder structure is designed to be **minimal** and to have many **small 
 script files for every task and feature** instead of a few monolithic files
