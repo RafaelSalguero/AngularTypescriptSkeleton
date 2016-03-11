@@ -19,8 +19,10 @@ export class LoginController {
         {
            if (x)
                 this.$state.go("state2");
-            else
+            else{
                 alert("psst! User is 'Rafa' and password is '123"); 
+                this.Loading= false;                
+            }
         });
     }
 }
