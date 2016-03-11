@@ -1,14 +1,9 @@
-import loginService =require("app/features/login/loginService");
+import loginService =require("unit/hola");
  
 describe("a suite", function() {
-   it("contains spec with an expectation", function () {
-       expect(true).toBe(true);
-   }) 
-
-   angular.mock.module("app");
-   angular.mock.inject(function ($Q: ng.IQService) 
+   it("should be 10",  ()=> 
    {
-      console.log ($Q); 
+      expect(loginService).toBe(10); 
    });
 });
 

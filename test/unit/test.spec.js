@@ -1,11 +1,7 @@
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "unit/hola"], function (require, exports, loginService) {
     describe("a suite", function () {
-        it("contains spec with an expectation", function () {
-            expect(true).toBe(true);
-        });
-        angular.mock.module("app");
-        angular.mock.inject(function ($Q) {
-            console.log($Q);
+        it("should be 10", function () {
+            expect(loginService).toBe(10);
         });
     });
 });
