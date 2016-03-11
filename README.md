@@ -28,7 +28,6 @@ This project is built from the ground up to be
 - Enter to `localhost:8080` on your browser 
 
 ##Unit testing:
- - On a separate terminal window, run `npm run karmaServer` to start the karma phantomJS server
  - Run `npm test` for running all Karma tests
  - Write your own tests in typescript by adding `*.spec.ts` files to `test/unit` folder
 
