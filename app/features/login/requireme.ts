@@ -1,11 +1,11 @@
 import app = require('main/app');
 
 //We need to force the typescript compiler importing this module with the use of a dummy variable
-import LoginService = require('features/login/loginService'); 
+import LoginService = require('./loginService'); 
 LoginService;
 
 //Declare the login controller
-class LoginController {
+export class LoginController {
     constructor(private $state: ng.ui.IStateService, private LoginService : LoginService) {
     }
 

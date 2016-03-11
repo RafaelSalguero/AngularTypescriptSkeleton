@@ -1,4 +1,4 @@
-define(["require", "exports", 'main/app', 'features/login/loginService'], function (require, exports, app, LoginService) {
+define(["require", "exports", 'main/app', './loginService'], function (require, exports, app, LoginService) {
     LoginService;
     //Declare the login controller
     var LoginController = (function () {
@@ -18,6 +18,7 @@ define(["require", "exports", 'main/app', 'features/login/loginService'], functi
         };
         return LoginController;
     })();
+    exports.LoginController = LoginController;
     //Register the controller
     app.controller(LoginController);
     //Define its own routing state:
