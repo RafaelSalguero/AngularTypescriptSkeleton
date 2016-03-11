@@ -2,3 +2,5 @@
 node_modules/*
 #typings:
 typings/*
+#java script files:
+app/**/*.js
