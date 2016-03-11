@@ -1,6 +1,6 @@
 import app = require('main/app');
 
-export class LoginService {
+class LoginService {
     constructor(private $q : ng.IQService) {
         
     }
