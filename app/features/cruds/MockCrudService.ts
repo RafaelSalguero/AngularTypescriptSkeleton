@@ -21,7 +21,7 @@ class MockCrudService<T extends { PK: number }> implements features.cruds.ICrudS
         
     /**Update entities values */
     Put(PK: number, Entity: T): ng.IPromise<void> {
-        for (var i in this.table) {
+        for (var i = 0; i < this.table.length; i++) {
             if (this.table[i].PK == PK) {
                 this.table[i] = Entity;
                 return this.$q.resolve();
@@ -32,7 +32,7 @@ class MockCrudService<T extends { PK: number }> implements features.cruds.ICrudS
         
     /**Delete an entity */
     Delete(PK: number): ng.IPromise<void> {
-        for (var i in this.table) {
+        for (var i = 0; i < this.table.length; i ++) {
             if (this.table[i].PK == PK){
                 this.table.splice(i, 1);
                 return this.$q.resolve();
