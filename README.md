@@ -1,5 +1,5 @@
 ##Do not use me for production yet
-This proyect is isn't finished, but it have the most work already done. Feel free to test it or contribute! :)
+This proyect isn't finished, but it have most of the work already done. Feel free to test it or contribute! :)
 
 ##Angular + Typescript + RequireJS skeleton ❤❤
 *with Karma + PhantomJS unit testing!*
