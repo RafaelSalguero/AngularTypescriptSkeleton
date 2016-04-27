@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-=======
-##Do not use me for production yet
-This proyect isn't finished, but it have most of the work already done. Feel free to test it or contribute! :)
 
->>>>>>> 8a6eaf8deb17e5ca12c5e49bccecb96fd4391862
 ##Angular + Typescript + RequireJS skeleton ❤❤
 *with Karma + PhantomJS unit testing!*
 ###Easily starting up large-scale angular projects.
