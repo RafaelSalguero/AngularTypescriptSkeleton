@@ -6,6 +6,9 @@ var exec = (x) => x.forEach(y=> {
     var r = require('child_process').execSync(y, {encoding: "utf8" } ); if (r != null && r != "") console.log(r);
 });
 exec([
+    //genera cache busting version:
+    'node node_modules/dateversion/dateversion.js "app/version.js" "application.version"',
+    
     //generate requires for polyfills:
     'node node_modules/autoreq/autoreq.js *.js . app\\polyfills\\requireme.ts app\\polyfills',
     //generate requires for all requireme files:

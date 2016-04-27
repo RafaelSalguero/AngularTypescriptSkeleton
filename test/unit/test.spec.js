@@ -1,4 +1,5 @@
 define(["require", "exports", "app/features/login/loginService", 'angular-mocks'], function (require, exports, loginService) {
+    "use strict";
     //Force the import of the login service:
     loginService;
     describe("login test", function () {

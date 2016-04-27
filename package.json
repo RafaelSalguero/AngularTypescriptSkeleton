@@ -4,8 +4,8 @@
   "description": "angular typescript",
   "main": "index.js",
   "scripts": {
-    "install" : "typings i",
-    "start": "node tools\\build.js && tsc && http-server -c-1",
+    "install": "typings i",
+    "start": "node tools\\build.js && tsc && http-server",
     "watch": "node tools\\build.js && tsc -w",
     "build": "node tools\\build.js && tsc",
     "karma": "node node_modules/karma/bin/karma",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "angular-mocks": "^1.5.0",
     "autoreq": "^1.0.6",
+    "dateversion": "^1.0.4",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",

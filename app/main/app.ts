@@ -11,37 +11,60 @@ var depends = ['ui.router'];
 var container = "container";
 var app = angular.module(appName, depends);
 
-export = { 
+/**Configure ui router with the cache busting version parameter */
+function configureTemplateFactory($provide: ng.auto.IProvideService): void {
+    // Set a suffix outside the decorator function 
+    var cacheBuster = application.version;
+
+    function templateFactoryDecorator($delegate) {
+        var fromUrl = angular.bind($delegate, $delegate.fromUrl);
+        $delegate.fromUrl = function (url, params) {
+            if (url !== null && angular.isDefined(url) && angular.isString(url)) {
+                url += (url.indexOf("?") === -1 ? "?" : "&");
+                url += "v=" + cacheBuster;
+            }
+
+            return fromUrl(url, params);
+        };
+
+        return $delegate;
+    }
+
+    $provide.decorator('$templateFactory', ['$delegate', templateFactoryDecorator]);
+}
+app.config(["$provide", configureTemplateFactory]);
+
+export = {
     /**Application main module */
     app: app,
     /**shortcut for configuring a router state */
-    state: 
+    state:
     /**
      * @param name state name
      * @param config state config
      */
-    function(name: string, config: ng.ui.IState) {
-        app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
+    function (name: string, config: ng.ui.IState) {
+        app.config(function ($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
             $stateProvider.state(name, config);
         })
     },
     /**Declare a controller with the same name as the class
     */
-    controller :
+    controller:
     /**
      * @param constructor The constructor of the controller to declare 
-     */ 
-    function(constructor : Function) : void  {
+     */
+    function (constructor: Function): void {
         app.controller((<any>constructor).name, constructor);
     },
     /**Declare a service with the same name as the class
     */
-    service :
+    service:
     /**
      * @param constructor The constructor of the service to declare 
      */
-     function<T>(constructor : Function) : void  {
+    function <T>(constructor: Function): void {
         app.service((<any>constructor).name, constructor);
     }
-}; 
+};
 

@@ -1,6 +1,3 @@
-##Do not use me for production yet
-This proyect is isn't finished, but it have the most work already done. Feel free to test it or contribute! :)
-
 ##Angular + Typescript + RequireJS skeleton ❤❤
 *with Karma + PhantomJS unit testing!*
 ###Easily starting up large-scale angular projects.
@@ -12,6 +9,7 @@ This project is built from the ground up to be
 - **Auto generated `require` dependencies** All files named `requireme.ts` are automaticly required, preventing a large, manually mantained dependencies file for controllers, services, ...
 - **Tasks** `npm scripts` and `node` programs instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
 - **Routing** included using `ui.routing` that supports neasted views and other goodies
+- **Cache busting** for javascript and html files with an auto generated timestamp at each `npm run build` / `npm start`
 
 
 **External global dependencies**
