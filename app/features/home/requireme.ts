@@ -1,8 +1,8 @@
 import app = require('app/main/app');
 
 //Define its own routing state:
-app.state("state2", 
+app.state("home", 
 {
-    url:"/state2",
+    url:"/home",
     templateUrl: "app/features/home/home.html"
 })

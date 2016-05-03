@@ -18,7 +18,7 @@ export class LoginController {
         this.LoginService.checkPassword(this.User, this.Password).then (x=> 
         {
            if (x)
-                this.$state.go("state2");
+                this.$state.go("home");
             else{
                 alert("psst! User is 'Rafa' and password is '123"); 
                 this.Loading= false;                

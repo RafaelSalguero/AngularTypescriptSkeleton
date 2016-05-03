@@ -4,7 +4,7 @@
 // - Register a controller / service to the app module
 // - Register a state for routing
 import 'angular';
-import 'angular-ui-router';
+import 'angularUiRouter';
 
 var appName = "app";
 var depends = ['ui.router'];
