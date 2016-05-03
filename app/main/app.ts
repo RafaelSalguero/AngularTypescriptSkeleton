@@ -13,11 +13,26 @@ var app = angular.module(appName, depends);
 
 /**Configure ui router with the cache busting version parameter */
 function configureTemplateFactory($provide: ng.auto.IProvideService): void {
+    //It looks like global variables such as 
+    //application.version causes problems when doing unit tests!
+    var OnTest = false;;
+    try {
+        application;
+    } catch (error) {
+        OnTest = true;
+    }
+
     // Set a suffix outside the decorator function 
-    var cacheBuster = application.version;
+    var cacheBuster;
+    if (OnTest)
+        cacheBuster = "test";
+    else
+        cacheBuster = application.version;
 
     function templateFactoryDecorator($delegate) {
+
         var fromUrl = angular.bind($delegate, $delegate.fromUrl);
+
         $delegate.fromUrl = function (url, params) {
             if (url !== null && angular.isDefined(url) && angular.isString(url)) {
                 url += (url.indexOf("?") === -1 ? "?" : "&");
@@ -31,6 +46,7 @@ function configureTemplateFactory($provide: ng.auto.IProvideService): void {
     }
 
     $provide.decorator('$templateFactory', ['$delegate', templateFactoryDecorator]);
+
 }
 app.config(["$provide", configureTemplateFactory]);
 

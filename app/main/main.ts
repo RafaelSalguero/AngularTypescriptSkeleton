@@ -4,9 +4,9 @@ import './requireme';
 import app = require('./app');
 
 //configure the default routing state:
-app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
+app.app.config(["$urlRouterProvider",  function($urlRouterProvider: ng.ui.IUrlRouterProvider) {
         $urlRouterProvider.otherwise("/login");
-});
+}]);
 
 //Manually boostrap angular
 var container = "container"; 
