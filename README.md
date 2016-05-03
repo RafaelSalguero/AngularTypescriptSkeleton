@@ -49,6 +49,8 @@ This project is built from the ground up to be
 
 ##Use this repo as a skeleton
 - Clone the repository `git clone https://github.com/RafaelSalguero/AngularTypescriptSkeleton.git --depth 1`
+- Rename your project `ren AngularTypescriptSkeleton My_Project`
+- Go to your project `cd My_Project`
 - Remove the remote origin `git remote rm origin`
 
 
