@@ -1,5 +1,6 @@
 
 ##Angular + Typescript + RequireJS skeleton ❤❤
+*with r.js minification!*
 *with Karma + PhantomJS unit testing!*
 ###Easily starting up large-scale angular projects.
 
@@ -11,6 +12,7 @@ This project is built from the ground up to be
 - **Tasks** `npm scripts` and `node` programs instead of `grunt` or other tasks runner eliminates an innecesary abstraction layer
 - **Routing** included using `ui.routing` that supports neasted views and other goodies
 - **Cache busting** for javascript and html files with an auto generated timestamp at each `npm run build` / `npm start`
+- **r.js minification** run `npm run deploy` to get a production ready page
 
 
 **External global dependencies**
@@ -25,7 +27,13 @@ This project is built from the ground up to be
 
 ##Running the app:
 - Serve the page running `npm start` 
-- Enter to `localhost:8080` on your browser 
+- Enter to `localhost:8080` on your browser
+
+##Minfying the app:
+- Run `npm run deploy`
+- Go to `./app_main_build/` 
+- Serve the page with `http-server`
+- Enter to `localhost:8080` on your browser  
 
 ##Unit testing:
  - Run `npm test` for running all Karma tests
