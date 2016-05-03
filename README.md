@@ -40,7 +40,7 @@ This project is built from the ground up to be
 - Run `typings install library_name -SA` to install the package as an ambient dependency
 
 ##Use this repo as a skeleton
-- Clone the repository `git clone https://github.com/RafaelSalguero/AngularTypescriptSkeleton.git`
+- Clone the repository `git clone https://github.com/RafaelSalguero/AngularTypescriptSkeleton.git --depth 1`
 - Remove the remote origin `git remote rm origin`
 
 ##Structure overview:
