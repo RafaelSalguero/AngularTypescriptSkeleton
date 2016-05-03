@@ -1,6 +1,13 @@
 #packages:
 node_modules/*
+
 #typings:
 typings/*
+
 #java script files:
 app/**/*.js
+
+#build:
+app_build/**/*
+app_build_min/**
+!app/app.build.js
