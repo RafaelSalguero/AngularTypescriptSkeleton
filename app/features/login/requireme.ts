@@ -28,7 +28,7 @@ export class LoginController {
 }
 
 //Register the controller
-app.controller(LoginController);
+app.controller("LoginController", ["$state", "LoginService"], LoginController);
 
 //Define its own routing state:
 app.state("login", {

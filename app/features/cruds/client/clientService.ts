@@ -12,5 +12,5 @@ class ClientService extends Mock<models.Client>  {
     }    
 }
 
-app.service(ClientService);
+app.service("ClientService", ["$q"], ClientService);
 export = ClientService;

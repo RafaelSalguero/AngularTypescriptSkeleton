@@ -11,7 +11,7 @@ app.app.config(function($stateProvider: ng.ui.IStateProvider, $urlRouterProvider
 //Manually boostrap angular
 var container = "container"; 
 
-angular.bootstrap( document.getElementById(container), [ app.app.name ]);
+angular.bootstrap( document.getElementById(container), [ app.app.name ], { strictDi : true });
 
 //Explicity export 'app' so the typescript compiler output a module definition
 export = app;

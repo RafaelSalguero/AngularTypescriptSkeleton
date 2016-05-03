@@ -14,6 +14,6 @@ class LoginService {
     
 }
 
-app.service(LoginService);
+app.service("LoginService", ["$q", "$timeout"], LoginService);
 
 export = LoginService;
