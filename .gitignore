@@ -11,3 +11,5 @@ app/**/*.js
 app_build/**/*
 app_build_min/**
 !app/app.build.js
+
+index.html
