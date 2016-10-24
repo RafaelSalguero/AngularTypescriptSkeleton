@@ -53,7 +53,7 @@ This project is built from the ground up to be
 - Go to your project `cd My_Project`
 - Reset git in order to avoid conflicts with this shallow repo 
 ```
-rmdir .git /S
+rmdir .git /S /Q
 git init 
 git add .
 git commit -m "Initial commit"
