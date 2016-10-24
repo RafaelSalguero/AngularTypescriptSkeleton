@@ -15,7 +15,7 @@ var versionCmd = `node node_modules/replace/bin/replace.js "${versionRegex}" "${
 exec([
     //Copia el index_TEMPLATE.html al index, esto para evitar tener al index adentro del control de código,
     //ya que con cada compilación esta cambiando
-    'COPY /Y "index_TEMPLATE.html" "index.html',
+    'COPY /Y "index.template.html" "index.html',
     //Reemplaza la versión del Index.html:
     versionCmd,
     
